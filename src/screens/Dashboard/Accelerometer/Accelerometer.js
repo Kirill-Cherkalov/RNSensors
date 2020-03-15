@@ -1,10 +1,10 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React from "react";
+import { View, Text } from "react-native";
 
-const Accelerometer = () => {
+const Accelerometer = ({ coordinates }) => {
   return (
     <View>
-      <Text>Accelerometer</Text>
+      <Text>Accelerometer {coordinates}</Text>
     </View>
   );
 };

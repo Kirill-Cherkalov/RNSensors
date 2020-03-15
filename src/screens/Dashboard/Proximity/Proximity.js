@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const Gyroscope = () => {
+const Proximity = () => {
   return (
     <View>
-      <Text>Gyroscope</Text>
+      <Text>Proximity</Text>
     </View>
   );
 };
 
-export default Gyroscope;
+export default Proximity;

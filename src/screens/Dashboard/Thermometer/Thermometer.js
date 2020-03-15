@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const Gyroscope = () => {
+const Thermometer = () => {
   return (
     <View>
-      <Text>Gyroscope</Text>
+      <Text>Thermometer</Text>
     </View>
   );
 };
 
-export default Gyroscope;
+export default Thermometer;
