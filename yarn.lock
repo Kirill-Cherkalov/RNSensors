@@ -5300,6 +5300,11 @@ react-native-screens@^2.3.0:
   dependencies:
     debounce "^1.2.0"
 
+react-native-sensor-manager@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/react-native-sensor-manager/-/react-native-sensor-manager-0.1.10.tgz#c228280d67fddb668e715b4d7b823188de504da8"
+  integrity sha1-wigoDWf922aOcVtNe4IxiN5QTag=
+
 react-native-svg@^12.0.3:
   version "12.0.3"
   resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-12.0.3.tgz#5dcc0e73efca50c8cfff098b20404551fad4aa5e"
