@@ -1,11 +1,18 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Dimensions } from "react-native";
+
+import * as S from "./styles";
 
 const Accelerometer = ({ coordinates }) => {
+  console.log((250 / 20) * coordinates.x);
+
   return (
-    <View>
-      <Text>Accelerometer {coordinates}</Text>
-    </View>
+    <S.Container>
+      <S.GameField>
+        <S.Ball y={(400 / 20) * coordinates.y} x={(250 / 20) * coordinates.x} />
+      </S.GameField>
+      {/* <Text>Accelerometer {JSON.stringify(coordinates)}</Text> */}
+    </S.Container>
   );
 };
 
