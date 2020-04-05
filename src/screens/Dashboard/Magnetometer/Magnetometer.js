@@ -8,10 +8,10 @@ const Value = ({ name, value }) => (
   </View>
 );
 
-const Gyroscope = ({ data }) => {
+const Magnetometer = ({ data }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.headline}>Gyroscope values</Text>
+      <Text style={styles.headline}>Magnetometer values</Text>
       {Object.keys(data).map(axis => (
         <Value key={axis} name={axis} value={data[axis]} />
       ))}
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Gyroscope;
+export default Magnetometer;

@@ -1,5 +1,16 @@
-import * as React from 'react';
+import * as React from "react";
+import { ThemeProvider } from "styled-components";
 
-import Router from './src/router';
+import Router from "./src/router";
 
-export default () => <Router />;
+const theme = {
+  dark: "#0B0F18",
+  red: "#C93A29",
+  white: "#ffffff",
+};
+
+export default () => (
+  <ThemeProvider theme={theme}>
+    <Router />
+  </ThemeProvider>
+);

@@ -1,17 +1,35 @@
-import React from "react";
-import { View, Text, Dimensions } from "react-native";
+import React, { useMemo, useState } from "react";
+
+import Flex from "components/Container";
 
 import * as S from "./styles";
 
-const Accelerometer = ({ coordinates }) => {
-  console.log((250 / 20) * coordinates.x);
+const CoordinateItem = ({ label, value }) => (
+  <Flex.Column
+    style={{
+      alignItems: "center",
+    }}
+  >
+    <S.Value>{value}</S.Value>
+    <S.Label>{label}</S.Label>
+  </Flex.Column>
+);
 
+const Accelerometer = ({ coordinates, syncCoord }) => {
   return (
     <S.Container>
-      <S.GameField>
-        <S.Ball y={(400 / 20) * coordinates.y} x={(250 / 20) * coordinates.x} />
-      </S.GameField>
-      {/* <Text>Accelerometer {JSON.stringify(coordinates)}</Text> */}
+      <S.Game>
+        <S.GameField>
+          <S.Ball
+            style={{
+              transform: coordinates.getTranslateTransform(),
+            }}
+          />
+          <S.Circle>
+            <S.SuccessField />
+          </S.Circle>
+        </S.GameField>
+      </S.Game>
     </S.Container>
   );
 };
